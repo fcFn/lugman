@@ -2,7 +2,7 @@
 
 This is a list management app that I use personally to organize my luggage during travels.
 
-Written as an exercise in Tkinter.
+Written as an exercise in Tkinter some 5 years ago.
 
 ## Requirements
 
