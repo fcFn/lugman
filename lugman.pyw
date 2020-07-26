@@ -33,6 +33,7 @@ class App:
         
     def createmainframe(self):   
         self.root = tkinter.Tk()
+        self.root.protocol("WM_DELETE_WINDOW", self.quit)
         self.root.title(self.name)
         self.mainframe = ttk.Frame(self.root)
         self.contframe = ttk.Frame(self.mainframe)
@@ -84,7 +85,7 @@ class App:
         #self.root.bind('<Control-ocircumflex>', self.addnewcontainer) 
         
     def quit(self):
-        sure = messagebox.askyesno('Oi!', 'Are you sure you want to quit?')
+        sure = messagebox.askyesno('Oi!', "Are you sure you want to quit?\n\nAll unsaved changes will be lost!")
         if sure: self.root.destroy()
         return        
         
