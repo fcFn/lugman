@@ -92,22 +92,38 @@ class App:
         helptext = """
 Lugman v0.9
 
-This program manages lists of items.
+This app manages lists of items.
 
-To add new items to containers enter name into the entry box and press the plus button or hit Enter key.
-You can also hit Control-A anywhere to add new container.
+To add a new container, press the "Add new container" button at the top of the main window. If you only have a default empty container, the newly created container will replace it.
 
-To delete a container or change container name right-click the container.
+To add a new item to a container, enter the item name into the input box under the container and press the plus button or hit the Enter key.
 
-To delete all containers right-click any container and select "Delete all containers."
+Click an item to mark it.
 
-To delete an item from container or edit item name right-click the item.
+The counter beside the name of a container displays the amount of marked items against the total items in the container.
+
+You can also hit Control-Space anywhere to add a new container.
+
+To delete a container or change the container name, right-click the container.
+
+To delete all containers, right-click any container and select "Delete all containers". You will be prompted to save your list beforehand.
+
+To delete an item from a container or edit the item name, right-click the item.
 
 You can move individual items between containers by dragging and dropping.
 
-To move multiple items select them by middle-click and drag and drop them into desired container (duplicated items will not be moved).
+To move multiple items, use the middle mouse button to mark them and drag and drop them into the desired container (duplicated items will not be moved).
 
-Right-click item and choose "Drop selection" to drop multiple item selection."""
+Right-click an item and choose "Drop selection" to drop multiple item selection without moving the items.
+
+Press the "Save" button to save the current list.
+
+Press the "Load" button to select and load a save file.
+
+Press the "Export" button to export the list into the clipboard in human-readable format. Paste it to share it via IM, email, etc.
+
+Press the "Help" button to read this message.
+"""
         messagebox.showinfo('Help', helptext)
         
     def gridmenus(self):
